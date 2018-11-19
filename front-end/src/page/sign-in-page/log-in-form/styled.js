@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-const FormWrapper = styled.div`
+export const FormWrapper = styled.div`
     Form {
     display: flex;
     flex-direction: column;

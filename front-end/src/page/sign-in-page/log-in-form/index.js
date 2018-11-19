@@ -7,32 +7,35 @@ import Form, {
   } from '@atlaskit/form';
 import FieldText from '@atlaskit/field-text';
 import Button from '@atlaskit/button';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FormWrapper } from './styled';
 
-export function LogInForm() {
+export default function LogInForm() {
     return (
-        <Form>
-            <FormHeader
-                title="Sign in"
-                description="Be ready to optimize your wardrobe"
-            />
-            <FormSection>
-                <Field required>
-                    <FieldText placeholder="Email adress.." />
-                </Field>
-                <Field required>
-                    <FieldText placeholder="Password.." />
-                </Field>
+        <FormWrapper>
+            <Form>
+                <FormHeader
+                    title="Sign in"
+                    description="Be ready to optimize your wardrobe"
+                />
+                <FormSection>
+                    <Field required>
+                        <FieldText placeholder="Email adress.." />
+                    </Field>
+                    <Field required>
+                        <FieldText placeholder="Password.." />
+                    </Field>
 
-            </FormSection>
-            <FormFooter>
-                <div className="footer">
-                    <Link to='/register'>I don't have an account</Link>
-                    <Button appearance="primary">
-                        Sign In
-                    </Button>
-                </div>
-            </FormFooter>
-        </Form>
+                </FormSection>
+                <FormFooter>
+                    <div className="footer">
+                        <Link to='/register'>I don't have an account</Link>
+                        <Button appearance="primary">
+                            Sign In
+                        </Button>
+                    </div>
+                </FormFooter>
+            </Form>
+        </FormWrapper>
     )
 }

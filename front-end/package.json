@@ -8,7 +8,7 @@
     "@atlaskit/field-text": "^7.0.12",
     "@atlaskit/field-text-area": "^4.0.10",
     "@atlaskit/form": "^4.0.12",
-    "@atlaskit/select": "^6.1.0",
+    "@atlaskit/select": "^6.1.7",
     "history": "^4.7.2",
     "immutable": "^3.8.2",
     "react": "^16.5.2",
